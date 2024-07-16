@@ -1,0 +1,433 @@
+/* ここから下に記載していく */
+#body{
+    width:1200px;
+    /* 全体幅1200px */
+    color: #222222;
+    font-size: 16px;
+}
+.header{
+    width: 1200px;
+}
+.container1{
+    display: flex;
+}
+
+.item1{
+    padding: 20px;
+}
+.migiue{
+    margin: 0 0 0 auto;
+}
+.container2{
+    margin: auto;
+    display: flex;
+    padding: 50px;
+    font-size: 21px;
+    justify-content: space-around;
+}
+.item2{
+    padding-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+    transition: .3S;
+}
+a:hover{
+    opacity: 0.5;
+    /* 0.3秒かけて0.5薄くなる */
+}
+.main{
+    position: relative;
+    width: 1200px;
+}
+
+.main h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;   
+    text-align: center; 
+}
+.main p{
+    font-size: 30px;
+    text-align: center;
+}
+.moji01{
+    width: 1200px;
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:50%;
+    left: 50%;
+    color: #fff;
+    -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    margin: 0;/*文字がずれている場合や*/
+    padding: 0;/*文字が折り返される場合*/
+}
+.content1{
+    width: 1200px;
+}
+#about{
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content1 h3{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+#about01{
+    text-align: center;
+    margin-bottom: 24px;
+    /* 行間2.0で上下に8pxずつあるので */
+}
+#about02{
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 2.0;
+}
+#about03{
+    text-align: center;
+    margin-bottom: 24px;
+}
+#about04{
+    text-align: center;
+    line-height: 2.0;
+    margin-bottom: 72px;
+}
+
+.container_img1{
+        width: 1200px;
+}
+.gazou{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.content2{
+    width: 1200px;
+}
+#course{
+    font-size: 24px;
+    color: #222222;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.content2 p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 52px;
+    line-height: 2.0;
+}
+.content2-2{
+    background-color: #fafafa;
+    width: 1200px;
+    font-size: 16px;
+}
+.container_course{
+    width: 1200px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.container_course2{
+    /* width: 1200px; */
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: right;
+}
+
+.item_course{
+    /* flex: 1; */
+    width: 600px;
+    /* margin-right: 120px; */
+}
+.item_courseimg{
+    width: 600px;
+    object-fit: cover;
+}
+.item_course h2{
+    font-size: 24px;
+    font-weight: 600;
+    /* margin-top: 120px; */
+}
+.item_course p{
+    line-height: 2.0;
+    margin-top: 32px;
+}
+.item_course2 h2{
+    font-size: 24px;
+    font-weight: 600;
+    /* margin-top: 120px; */
+}
+.item_course2 p{
+    line-height: 2.0;
+    margin-top: 32px;
+}
+#news{
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content3{
+    width: 1200px;
+}
+.content3 p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.container_news{
+    width: 1200px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.container_news h3{
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+.container_news p{
+    line-height: 2.0;
+}
+.item_news_img01{
+    text-decoration: none;
+    color: #222222;
+    transition: .3S;
+    cursor: pointer;
+}
+.item_news_img01:hover{
+    opacity: 0.5;
+    /* 0.3秒かけて0.5薄くなる */
+}
+.more{
+    width: 1200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 60px;    
+}
+.btn{
+  font-size: 18px;
+  font-weight: 700;
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  background-color: #ffd61a;
+
+  position: relative;
+  display: inline-block;
+ 
+  cursor: pointer;  /* 指ポインタ */
+
+  /* user-select: none; */
+  /* 範囲選択できるかどうか */
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ここまででテキスト真ん中配置 */
+  
+ vertical-align: middle;
+  letter-spacing: 0.1em; /* 文字の間隔 */
+  border-radius: 3.0rem; /* 角丸 */
+}
+.access{
+    width: 1200px;
+    background-color: #fafafa;
+}
+
+#access{
+    font-size: 24px;
+    color: #222222;
+    font-weight: 600;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content4 p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#map{
+    width: 100%;
+}
+.acs1{
+    display: flex;
+    flex-direction: column;
+}
+.acs2{
+    display: flex;
+    flex-direction: column;
+}
+.container_access{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.access01{
+    margin-top: 430px;
+}
+.item5{
+    height: 50px;
+}
+
+
+.contact{
+    width: 1200px;
+
+}
+#contact{
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: 600;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content5 p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contactmoji{
+    line-height: 2.0;
+    font-size: 16px;
+    text-align: center;
+}
+.cmoji1{
+    margin-bottom: 22px;
+}
+.cmoji2{
+    margin-bottom: 70px;
+}
+.form{
+    font-size: 16px;
+}
+table{
+    border-collapse: collapse;
+    border: none;
+    border-bottom: 3px solid #bfbfbf;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+th,td{
+    border: none;
+    border-left: 3px solid #bfbfbf;
+    border-top: 3px solid #bfbfbf;
+}
+th{
+    width: 240px;
+    text-align: left;
+    padding-left: 16px;
+}
+.th2{
+    width: 240px;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+#kikkakemoji{
+    line-height: 1.2;
+    vertical-align: middle;
+    pa
+}
+#kikkake{
+    width: 328px;
+    height: 34px;
+    border-color: #bfbfbf;
+    position: relative;
+    /* margin: auto; */
+}
+td{
+    width: 400px;
+    padding: 8px;
+}
+td:first-child,th:first-child{
+    border-left: none;
+}
+.name,.kana,.email{
+    width: 320px;
+    height: 30px;
+    border-color: #bfbfbf;
+}
+#syosai{
+    border-color: #bfbfbf;
+}
+
+.soshin{
+    width: 1200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 140px;    
+}
+.btn2{
+    font-size: 18px;
+    font-weight: 700;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    background-color: #ffd61a;
+  
+    position: relative;
+    display: inline-block;
+   
+    cursor: pointer;  /* 指ポインタ */
+  
+    /* user-select: none; */
+    /* 範囲選択できるかどうか */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center; /* ここまででテキスト真ん中配置 */
+    
+   vertical-align: middle;
+    letter-spacing: 0.1em; /* 文字の間隔 */
+    border-radius: 3.0rem; /* 角丸 */
+    
+    transition: 0.3s;
+    border: none;
+}
+.btn2:hover{
+    opacity: 0.5;
+}
+.footer{
+    background-color: #707070;
+    width: 1200px;
+}
+.footmoji{
+    color: #fafafa;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.douki{
+    line-height: 48px;
+    font-size: 16px;
+}
+.map{
+   width: 1200px;
+   height: 300px;
+   position: absolute;
+}
+.map iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
